@@ -1,0 +1,101 @@
+*{
+ box-sizing: border-box;
+ margin:0;
+ padding:0;
+}
+.column0 a{
+      margin:10px;
+      text-decoration:none;
+      color:rgb(0, 110, 255);
+}
+.column0 a:hover{
+      text-decoration: underline;
+      color:blue;
+}
+.column0 {
+      float: left;
+      width: 210px;
+     margin:20px;
+     padding: 10px;
+     border-radius:10%;
+     background-color: rgb(250, 244, 244);
+     box-shadow: 0 1px 2px black;
+     text-align: center;
+}
+    
+/* Clear floats after the columns */
+.row0:after {
+       content: "";
+      display: table;
+      clear: both;
+     
+}
+/*to make main content floats beside subcontent*/
+.columnA{
+      width:50%;
+      margin:auto;
+      padding: 20px;
+      text-align: justify;
+      background-color: rgba(190, 187, 187, 0.445);
+      color:black;
+      position:absolute;
+      left:25%;
+}
+.clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+}
+.columnB{
+      float: right;
+      width: 210px;
+     margin:20px;
+     padding: 20px;
+     
+     border-radius:10%;
+     background-color: rgb(250, 244, 244);
+     box-shadow: 0 1px 2px black;
+     text-align: center;
+     
+}
+
+footer{
+      position: relative;
+}
+/*to make sub content go under main content on tablets*/
+@media screen and (max-width:1020px){
+      .column0{
+            border-radius:0;
+            border-bottom: 1px dashed black;
+           width:100%;
+            padding:20px;
+            text-align: center;
+            margin:auto;
+            box-shadow: 0;
+               
+               
+      }
+      .columnA{
+            
+      width:70%;
+                           
+      margin:0;
+      padding: 0;
+      text-align: left;
+      background-color: rgba(190, 187, 187, 0.445);
+      color:black;
+      position:relative;
+      font-size: 12px;
+      
+                  
+                 
+      }
+      .columnB{
+            border-radius:0;
+            border-bottom: 1px dashed black;
+                  width:100%;
+                  padding:20px;
+               text-align: center;
+               margin:auto;
+      }
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/ht.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/treasure.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0/assets/css/docs.min.css">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hidden Treasure Discovery Initiative</title>
+
+  <!--slideshow styling, did not respond in ext stylesheet-->
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        box-sizing: border-box;
+        position: relative;
+        margin: auto;
+        margin-top:3px;
+        height: 25%;
+        width:50%;
+        box-shadow: 0 2px 3px#717171
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 22px;
+        padding: 8px 12px;
+        position: absolute;
+         bottom: 20px;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(2, 2, 2, 0.199);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 800px) {
+        .prev, .next,.text {font-size: 16px}
+         
+        .slideshow-container{
+          width: 100%;
+        }
+      }
+      
+    
+      </style>
+</head>
+<header>
+   <!--this is a navbar-->
+   <div class="position">
+    <div class="logo-container">
+    
+      <span class="hidden" >HIDDEN TREASURE</span> 
+      <img src="img/ht.png" width="8%" height="8%"> 
+      <span class="discovery">DISCOVERY INITIATIVE </span>
+     
+    </div>
+    <!--use incase of adding a motto
+    <div class="motto"><em><strong>...discovering new talents.</strong></em></div>
+  -->
+    
+    
+    
+    <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="news.html">News</a>
+            <a href="#contact">Discover</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+              <button class="dropbtn">Events 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Singing Competition</a>
+                <a href="#">Dancing Competition</a>
+                <a href="#">Exhibition</a>
+              </div>
+            </div>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+
+
+            <div  class="login-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Username" name="username">
+                        <input type="text" placeholder="Password" name="psw">
+                        <button type="submit">Login</button >
+                      </form >
+            </div>
+    </div>
+           
+  </div>
+  
+                  
+           
+<!--end of navbar-->
+
+</header>
+<style>
+  body{
+    background-image: url(img/geo2.jpg);
+  }
+</style>
+<body>
+   <div class="vision-container">
+     <div class="row2">
+       <div class="column">
+          <h3 class="majortext">OUR VISION</h3>
+          <div class="minortext"><p>To help unleashing potential in students for global utilization and development of nations.</p></div>
+       </div> 
+       
+       <div class="column"><h3 class="majortext">AIMS AND OBJECTIVES</h3>
+        
+            <li class="li">To help the youths discover their hidden talents, develop and promote them through sponsorship.</li>
+            <li class="li">To encourage innovations and creativity.</li>
+            <li class="li">To engage in relevant publications.</li>
+            <li class="li">To organize Inter-School Talent Hunt  Competitions, Youth Forum and other relevant programme including Seminars, Conference, Exhibits, Symposia,etc.</li>
+            <li class="li">To engagge in charity programme for the less priviledge.</li>
+            <li class="li">To organize career counselling.</li>
+            <li class="li">To have a vocational center.</li>
+        
+         
+       </div>
+            
+       <div class="column">
+          <h3 class="majortext"> OUR MISSION</h3>
+          <div class="minortext"><P>To help students discover their innate abilities by creatin a platform where they can express themselves through organizing Inter-school Talent-Hunt Competitions, thereby becoming useful to themselves and to the nations.</P></div>
+       </div>
+
+     </div>
+   </div>
+    
+    
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/sing2.jpg" style="width:100%">
+    <div class="text">We can make your voice heard...</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/drum.jpg" style="width:100%">
+    <div class="text">You can make the world feel your rhythm</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/art.jpg" style="width:100%">
+    <div class="text">Express yourself...</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/tech.jpg" style="width:100%">
+    <div class="text">SIGN UP for our yearly TALENT HUNT PROGRAMME! </div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+   
+
+  
+   <h2 class="pop">WHAT WE OFFER</h2>
+     
+   
+     <div class="map-container">
+       <div class="row3">
+         <div class="column2">
+           <img src="img/color2.jpg" width="200px">
+           <a href=""><div class="bottomtext">TALENT HUNT</div></a>
+         </div>
+
+         <div class="column2">
+           <img src="img/doc2.jpg" width="200px">
+           <a href=""><div class="bottomtext">CAREER COUNSELLING</div></a>
+         </div>
+
+         <div class="column2">
+           <img src="img/pen2.png" width="200px">
+           <a href=""><div class="bottomtext"> CAREER TESTS</div></a>
+         </div>
+         <div class="column2">
+           <img src="img/sing22.jpg" width="200px">
+           <a href=""><div class="bottomtext"> TALENT NURTURING</div></a>
+         </div>
+       </div>
+     </div>
+   
+    
+
+   
+
+  
+      <footer>
+        <div class="row5 auto">
+          <div class="column4"><h5 class="w">ABOUT</h5>
+            
+              <p class="whitish">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                       
+          </div>
+
+          <div class="column4">
+              <h5 class="w">NEWS</h5>
+            <p class="whitish">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          
+          </div>
+          <div class="column4">
+              <h5 class="w">GET SOCIAL</h5>
+              <i class="fa fa-facebook" style="font-size:34px; color:white; margin:5px;"title="Facebook" title-target="_self"></i>
+              <i class="fa fa-envelope" style="font-size:36px; color:white; margin:5px;"title="Email" title-target="_self"></i>
+              <i class="fa fa-instagram" style="font-size:36px; color:white; margin:5px;"title="Instagram" title-target="_self"></i>
+              <i class="fa fa-twitter"  style="font-size:36px; color:white; margin:5px;" title="twitter" title-target="_self" ></i>
+              <i class="fa fa-phone"  style="font-size:36px; color:white; margin:5px;" title="09086367" title-target="_self"></i>
+              <i class="fa fa-home"  style="font-size:36px; color:white; margin:5px;"title="Address" title-target="_self" ></i>
+             
+              
+          </div>
+          <a href="signup.html" class="click column4">
+            CLICK HERE TO SIGN UP
+          </a>
+        </div>
+      </footer>
+
+      <div class="powering"></div>
+        
+   
+ 
+
+        
+    
+     
+   
+
+
+
+
+
+
+
+
+
+
+ 
+   
+ <!--javascripting-->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+</body>
+<link rel="javasript" type="text/js" href="script/treasure.js">
+</html>
